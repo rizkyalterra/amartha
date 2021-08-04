@@ -10,4 +10,5 @@ func main() {
 	fmt.Println("C")
 	fmt.Println("D")
 	fmt.Println("featureA")
+	fmt.Println("featureASub")
 }
