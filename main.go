@@ -1,13 +1,12 @@
 package main
 
-import "fmt"
+import (
+	"pembayaran/configs"
+	"pembayaran/routes"
+)
 
 func main() {
-	fmt.Println("Hello World")
-	fmt.Println("A")
-	fmt.Println("B")
-	fmt.Println("F")
-	fmt.Println("C")
-	fmt.Println("D")
-	fmt.Println("featureA")
+	configs.InitDB()
+	e := routes.New()
+	e.Start(":8000")
 }
